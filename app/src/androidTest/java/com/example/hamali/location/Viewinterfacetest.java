@@ -11,11 +11,8 @@ import static org.junit.Assert.assertNull;
 
 public class Viewinterfacetest implements Interface.venue_view {
     public Interface.venue_presentor presentor;
-
-
     @Override
     public void showresult(List result_venue) {assertNotNull(result_venue);}
-
     @Override
     public void location() {
                presentor.locresult("123");

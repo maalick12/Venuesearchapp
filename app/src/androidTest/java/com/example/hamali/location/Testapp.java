@@ -24,7 +24,6 @@ public class Testapp {
     private Viewinterfacetest viewtest;
     private FoursquareTest fourtest;
     private Interface.venue_presentor presentor;
-
     @Test
     public void Testappfunction() {
         viewtest = new Viewinterfacetest();

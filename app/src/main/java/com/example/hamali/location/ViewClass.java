@@ -50,8 +50,7 @@ public class ViewClass extends AppCompatActivity implements Interface.venue_view
             public void onClick(View v) {
                 input = editText.getText().toString();
                 if (input.isEmpty()){editText.setError("Enter Keyword");}
-                else{
-                presentor.process(input);}
+                else{presentor.process(input);}
             }
         });
     }
@@ -61,7 +60,6 @@ public class ViewClass extends AppCompatActivity implements Interface.venue_view
     public void showresult(List result)
 
     {
-
         Adapter exploreList = new Adapter(getApplicationContext(), R.layout.list_view, result);
         listView.setAdapter(exploreList);
     }
@@ -111,10 +109,7 @@ public class ViewClass extends AppCompatActivity implements Interface.venue_view
         }else{
             Toast.makeText(this,"Please enable GPS",Toast.LENGTH_SHORT).show();
         }
-
-
-
-}
+    }
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
 
         switch (requestCode) {

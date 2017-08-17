@@ -42,17 +42,13 @@ public class Foursqaure implements Interface.venue_foursquare {
             @Override
             public void onResponse(Call<Explore> call, Response<Explore> response) {
                 item_list = response.body().getResponse().getGroups().get(0).getItems();
-
                 presentor.result(item_list);
             }
-
             @Override
             public void onFailure(Call<Explore> call, Throwable t) {
 
             }
         });
-
-
     }
 
 }

@@ -10,7 +10,6 @@ public interface Interface {
     interface  venue_view{
         void showresult(List result_venue);
         void location();
-
     }
     interface  venue_presentor{
         void result(List result);

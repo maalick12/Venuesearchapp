@@ -15,10 +15,10 @@ public class Presenter implements Interface.venue_presentor {
     public Presenter(Interface.venue_view view) {
         this.view = view;
         four = new Foursqaure(this);
-
     }
     @Override
     public void result(List result) {
+
         view.showresult(result);
     }
 
@@ -26,12 +26,9 @@ public class Presenter implements Interface.venue_presentor {
     public void process(String keyword) {
         input = new String(keyword);
         view.location();
-
     }
     public void locresult(String userloc){
         str = new String(userloc);
         four.searchvenue(input,str);
-
-
     }
 }
